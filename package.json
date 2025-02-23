@@ -1,11 +1,1 @@
-{
-  "devDependencies": {
-    "tailwindcss": "^3.4.17"
-  },
-  "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.7"
-  }
-}
+

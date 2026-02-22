@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css">
-    <title>Document</title>
-</head>
-<body class="p-0 m-0 box-border">
-   <section class="w-full h-screen flex">
-        
-        <div class="w-[50%] h-full  flex justify-center items-center ">
-          <img src="/image/image1.jfif" alt="" srcset="" class="w-[70%] h-[70%]">
-        </div>
-         
-        </p> 
-        <div class="h-screen w-[50%] flex justify-center items-center">
-          <div class="w-full max-w-md  p-8 rounded-lg shadow-lg">
-              <h1 class="text-4xl font-bold text-black mb-6">Bienvenue !</h1>
-              <form class="space-y-6">
-                  <div class="relative">
-                      <label for="email" class="block text-sm font-medium text-gray-300 "></label>
-                      <img src="/image/arroba.png" alt="" srcset="" class="w-4 h-4 absolute bottom-3 left-0 ml-2">
-                      <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 pl-8 border border-slate-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Entrer votre Email">
-                  </div>
-                  <div class="relative">
-                      <label for="password" class="block text-sm font-medium text-gray-300"></label>
-                      <img src="/image/cadenas.png" alt="" srcset="" class="w-4 h-4 absolute bottom-3 left-0 ml-2">
-                      <input type="password" id="password" name="password" class="mt-1 block w-full px-4 py-2 pl-8  border border-slate-500 rounded-md   focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Entrer votre mot de passe">
-                  </div>
-                  <div class="flex justify-end">
-                      <a href="#" class="text-sm text-blue-400 hover:text-blue-300">Mot de passe oublié ?</a>
-                  </div>
-                  <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Se connecter</button>
-              </form>
-              <div class="mt-10">
-                  <p class="text-center text-gray-500">Ou continuez avec</p>
-                  <div class="flex justify-center space-x-4 mt-8">
-                    <div class="flex items-center space-x-1 border rounded-sm border-slate-300 p-2 pr-10">
-                        <img src="/image/google.png" alt="Google" class="h-8"><a href="#" class="font-medium">Google</a>
-                        
-                      </div>
-                      <div class="flex items-center space-x-1 border rounded-sm border-slate-300 p-2 pr-10">
-                        <img src="/image/facebook.png" alt="Google" class="h-8"><a href="#" class="font-medium">Facebook</a>
-                        
-                      </div>
-                  </div>
-              </div>
-              <div class="mt-6 text-center">
-                  <p class="">Vous n'avez pas de compte ? <a href="register.html" class="text-blue-400 hover:text-blue-300 font-bold">S'inscrire</a></p>
-              </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Maths RDC — Tuteur IA</title>
+    <style>
+      .grid-bg {
+        background-image: linear-gradient(to right, rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+        background-size: 44px 44px;
+      }
+    </style>
+  </head>
+  <body class="m-0 min-h-screen bg-slate-50 text-slate-900 grid-bg">
+    <main class="mx-auto max-w-6xl px-6 py-7">
+      <header class="mb-8 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-lg font-bold text-white">Σ</div>
+          <div>
+            <p class="text-2xl font-semibold">Maths RDC</p>
+            <p class="text-xs uppercase tracking-[0.25em] text-slate-500">L'excellence en mathématiques</p>
           </div>
-      </div>
-      
-      
+        </div>
+        <button class="rounded-full bg-indigo-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-indigo-700">Commencer avec Google</button>
+      </header>
+
+      <section class="rounded-[2rem] bg-gradient-to-r from-indigo-100/80 to-amber-100/70 p-8 md:p-10">
+        <div class="grid gap-8 md:grid-cols-2 md:items-center">
+          <div>
+            <p class="mb-5 inline-flex rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">100% aligné au programme national RDC</p>
+            <h1 class="mb-4 text-4xl font-bold leading-tight md:text-6xl">Un tuteur IA qui comprend le programme de la RDC</h1>
+            <p class="mb-8 text-lg text-slate-600">Génère des leçons, explique étape par étape et adapte les exercices selon votre niveau en 3e et 4e Scientifique.</p>
+            <div class="flex flex-wrap gap-4">
+              <button class="rounded-full bg-indigo-600 px-6 py-3 font-semibold text-white hover:bg-indigo-700">Démarrer une session</button>
+              <button class="rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 hover:bg-slate-100">Voir la démo élève</button>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="/image/image1.jfif" alt="Élèves dans une salle de classe" class="h-[360px] w-full rounded-3xl object-cover shadow-lg" />
+            <div class="absolute -bottom-5 left-6 rounded-2xl bg-white/95 px-5 py-4 shadow-xl">
+              <p class="font-bold text-slate-800">Mode adaptatif</p>
+              <p class="text-sm text-slate-500">Niveau faible → explications simples, exemples concrets.</p>
+            </div>
+          </div>
+        </div>
       </section>
-</body>
+
+      <section class="mt-8 grid gap-4 md:grid-cols-3">
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="mb-3 text-2xl font-bold">Leçons guidées</h2>
+          <p class="text-slate-600">Définitions, formules et exemples résolus adaptés à votre niveau.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="mb-3 text-2xl font-bold">Exercices progressifs</h2>
+          <p class="text-slate-600">Au moins 3 exercices du programme, du plus simple au défi.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="mb-3 text-2xl font-bold">Correction intelligente</h2>
+          <p class="text-slate-600">Analyse des erreurs, explications pas à pas et lacunes détectées.</p>
+        </article>
+      </section>
+
+      <section class="mt-8 rounded-3xl bg-indigo-600 p-8 text-white shadow-lg md:p-10">
+        <h2 class="mb-3 text-4xl font-bold">Prêt à progresser avec le programme officiel ?</h2>
+        <p class="text-lg text-indigo-100">Connectez-vous et commencez une session personnalisée dès maintenant.</p>
+      </section>
+    </main>
+  </body>
 </html>
